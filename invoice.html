@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .invoice {
+            font-size: 72px;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+        }
+
+        #detalle {
+
+            width: 100%;
+        }
+
+        #detalle th {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 2px;
+        }
+
+        #detalle tbody tr td {
+            border: 1px solid black;
+            height: 50px;
+        }
+        .pie {
+            height: 200px;
+        }
+        #total {
+            width: 100%;
+            margin-top: 3px;
+        }
+        #total tr td {
+            border: 1px solid black;
+            height: 50px;
+            width: 50%;
+        }
+        #total tr td:first-child {
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            background-color: black;    
+        }
+        .container {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-5 container w-50 border border-4">
+        <div class="row mb-4">
+            <div>
+                <p class="invoice">Invoice</p>
+                <div class="d-flex justify-content-between">
+                    <div class="w-25">
+                        <div class="border bg-dark">
+                            <p class="h4 px-2 p-1 text-white">Bill To</p>
+                        </div>
+                        <div class="border p-2">
+                            <ul class="list-unstyled">
+                                <li>Company name</li>
+                                <li>Adress</li>
+                                <li>Phone</li>
+                                <li>Email</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="h2">Your Buisness Name</p>
+                        <p class="h4">Company Name</p>
+                        <p class="h4">Phone Number</p>
+                        <p class="h4">Website/Email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="detalle">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>DESCRIPCION</th>
+                    <th>QUANTITY</th>
+                    <th>UNIT COST</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row align-items-center">
+            <div class="col-7 my-3">
+                <div class="w-100 bg-dark text-white p-3">
+                    Comments
+                </div>
+                <div class="border pie">
+                    
+                </div>
+            </div>
+            <div class="col-5">
+                <table id="total" >
+                    <tr>
+                        <td>Subtotal</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Taxes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Grand Total</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p class="h3 text-center">Thanks you for your business</p>
+            </div>
+        </div>
+</body>
+
+</html>
